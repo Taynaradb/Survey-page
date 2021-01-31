@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey page</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="container">
+  <header class="header">
+<h1 id="title">Survey page for house paint</h1>
+<p id="description">Thank you for taking the time and helping out.</p>
+ </header>
+
+<form id="survey-form">
+  <label id="name-label">Name</label>
+  <input class="input-form" id="name" type="text" placeholder="Nome completo" required>
+  <label id="email-label">E-mail</label>
+  <input class="input-form" id="email" type="email" placeholder="E-mail" required>
+  <label id="number-label">Age</label>
+  <input class="input-form" id="number" type="number" min="40" max="69" maxlength = "2" placeholder="Age" required>
+
+<div id="selection">
+<label for="colors">Choose a color:</label>
+<select class="size" id="dropdown">
+  <option value="red" disabled selected value>Choose a color:</option>
+  <option name="subject" value="red">red</option>
+  <option name="subject" value="blue">blue</option>
+  <option name="subject" value="purple">purple</option>
+  <option name="subject" value="black">black</option>
+</select>
+  </div>
+  <br>
+  <label id="text" type="text">Write down other colors you'd prefer</label><br>
+<textarea rows="5" cols="60"></textarea>
+  <br>
+  
+  
+  <div class="radio-form">
+    <p><b>Would you paint your house the color you choose?</b></p>
+  <label><input class="radio-form" type="radio" value="Yes" name="Choice" checked>Yes</label> 
+  <label><input class="radio-form1" type="radio" value="No" name="Choice">No</label>
+  <label><input class="radio-form2" type="radio" value="maybe" name="Choice">Maybe</label>
+  </div>
+
+  
+  <div class="check-form">
+    <p><b>Do you paint your house often?</b></p>
+  <label><input  class="check-form" type="checkbox" value="Yes" name="yesChoice" checked>Yes</label> 
+  <label><input  class="check-form" type="checkbox" value="No" name="noChoice">No</label>
+  <label><input  class="check-form" type="checkbox" value="maybe" name="maybeChoice">Maybe</label>
+  </div>
+  <br>
+  <button id="submit" value="submit" type="submit">Submit</button>
+  </form>
+
+
+</body>
+</html>
